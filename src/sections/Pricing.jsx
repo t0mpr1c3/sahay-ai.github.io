@@ -5,29 +5,50 @@ import Button from "../components/Button";
 
 const pricing = [
     {
-        title: "Basic",
-        description: "AI chatbot, personalized recommendations",
-        price: "0",
-        features: ["An AI chatbot that can understand your queries", "Personalized recommendations based on your preferences", "Ability to explore the app and its features without any cost"],
-    },
-    {
-        title: "Premium",
-        description: "Advanced AI chatbot, priority support, analytics dashboard",
-        price: "9.99",
-        features: ["An advanced AI chatbot that can understand complex queries", "An analytics dashboard to track your conversations", "Priority support to solve issues quickly"],
-    },
-    {
-        title: "Enterprise",
-        description: "Custom AI chatbot, advanced analytics, dedicated account",
+        title: "Sahay App",
+        description: "Mobile app for inspectors and real-time tracking",
         price: null,
-        features: ["An AI chatbot that can understand your queries", "Personalized recommendations based on your preferences", "Ability to explore the app and its features without any cost"],
+        features: [
+            "Real-time logging, even offline",
+            "Track inspector efficiency",
+            "Custom alerts & notifications",
+            "Access full inspection history",
+            "Works in offline mode",
+            "Cloud sync for data access",
+        ],
+    },
+    {
+        title: "LARR-E",
+        description: "Advanced hardware for automated railway inspections",
+        price: null,
+        features: [
+            "Precision sensors for monitoring",
+            "AI-driven predictive analysis",
+            "Geotagging for fault locations",
+            "Downtime prediction for defects",
+            "Mountable on any rail vehicle",
+            "Lightweight and portable",
+        ],
+    },
+    {
+        title: "Track Dashboard",
+        description: "Real-time data visualization, work order and employee management tool",
+        price: null,
+        features: [
+            "Quick work order creation",
+            "Google Maps for asset tracking",
+            "Laser track inspection tools",
+            "Historical data playback",
+            "24/7 support for all users",
+            "Monitor team performance ",
+        ],
     },
 ];
 
 const Pricing = () => {
     return (
         <Section className="overflow-hidden" id="pricing">
-            <div className="container relative z-2">
+            <div className="container mx-auto relative z-2">
                 <div className="hidden relative justify-center mb-[6.5rem] lg:flex">
                     <img src={smallSphere} className="relative z-1" width={255} height={255} alt="" />
                     <div className="absolute top-1/2 left-1/2 w-[60rem] -translate-x-1/2 -translate-y-1/2 pointer-events-none">
@@ -35,27 +56,21 @@ const Pricing = () => {
                     </div>
                 </div>
 
-                <Heading tag="Get started with OpenAI" title="Pay once, use forever" />
+                <Heading tag="Get started with Sahay AI" title="Setup once, use forever!" />
 
                 <div className="relative">
-                    <div className="flex gap-[1rem] max-lg:flex-wrap">
+                    <div className="flex justify-center gap-[2rem] max-lg:flex-wrap">
                         {pricing.map((item, i) => (
-                            <div key={i} className="w-[19rem] max-lg:w-full h-full px-6 bg-n-8 border border-n-6 rounded-[2rem] lg:w-auto even:py-14 odd:py-8 odd:my-4 [&>h4]:first:text-color-2 [&>h4]:even:text-color-1 [&>h4]:last:text-color-3">
+                            <div 
+                                key={i} 
+                                className="w-[2rem] max-lg:w-full h-full px-6 bg-n-8 border border-n-6 rounded-[2rem] lg:w-[24rem] even:py-14 odd:py-14 my-4 [&>h4]:first:text-color-2 [&>h4]:even:text-color-1 [&>h4]:last:text-color-3"
+                            > {/* Restored the heading color classes */}
                                 <h4 className="h4 mb-4">{item.title}</h4>
 
                                 <p className="body-2 min-h-[4rem] mb-3 text-white/50">{item.description}</p>
 
-                                <div className="flex items-center h-[5.5rem] mb-6">
-                                    {item.price && (
-                                        <>
-                                            <div className="h3">$</div>
-                                            <div className="text-[5.5rem] leading-none font-bold">{item.price}</div>
-                                        </>
-                                    )}
-                                </div>
-
-                                <Button className="w-full mb-6" href={item.price ? "/pricing" : "mailto:your-email@domain.com"} white={item.price}>
-                                    {item.price ? "Get started" : "Contact us"}
+                                <Button className="w-full mb-6" href="mailto:your-email@domain.com" white>
+                                    Contact us
                                 </Button>
 
                                 <ul>

@@ -82,3 +82,12 @@ export { default as chromecast } from './chrome-cast.svg';
 export { default as sliders04 } from './sliders-04.svg';
 export { default as loading } from './loading.png';
 export { default as background } from './background.jpg';
+export {default as sahay} from './sahay1.png';
+export {default as main} from './main.png'
+export {default as ms} from './ms.png'
+export {default as small_ms} from './small_ms.png'
+export {default as linkedin} from './linkedin.svg'
+export {default as github} from './github.svg'
+export {default as crunchbase} from './crunchbase.svg'
+
+
