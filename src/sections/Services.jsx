@@ -38,7 +38,7 @@ const VisionAndTeam = () => {
                             </ul>
                         </div>
 
-                        <div className="flex items-center justify-center h-[3.5rem] px-6 bg-n-8/80 rounded-[1.7rem] absolute left-4 right-4 bottom-4 border-white/10 border lg:left-1/2 lg:right-auto lg:bottom-8 lg:-translate-x-1/2 text-base text-center">
+                        <div className="flex items-center justify-center h-[3.5rem] px-6 bg-n-8/80 rounded-[1.7rem] left-4 right-4 bottom-4 border-white/10 border text-base text-center lg:absolute lg:left-1/2 lg:right-auto lg:bottom-8 lg:-translate-x-1/2 mt-10 lg:mt-0">
     We are working to build the future in motion!
 </div>
 

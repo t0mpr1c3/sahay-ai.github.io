@@ -24,7 +24,7 @@ const roadmap = [
         title: "AI-powered App",
         text: "Developed an AI powered app for inspectors to record defects easily and generate diagnostics for proactive maintenance.",
         date: "June 2024",
-        status: "Done",
+        status: "done",
     },
     {
         id: "2",
