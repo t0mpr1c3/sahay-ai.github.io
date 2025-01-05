@@ -1,6 +1,5 @@
 import { Route, Routes } from "react-router-dom";
 import Benefits from "./sections/Benefits";
-import Collaboration from "./sections/Collaboration";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Hero from "./sections/Hero";
@@ -8,7 +7,9 @@ import Pricing from "./sections/Pricing";
 import Contact from "./sections/Contact";
 import Roadmap from "./sections/Roadmap";
 import Services from "./sections/Services";
-import PrivacyPolicy from "./sections/PrivacyPolicy"; // Import your Privacy Policy page
+import PrivacyPolicy from "./sections/PrivacyPolicy";
+import Article from "./sections/Article";
+import Blog from "./sections/Blog";
 
 const App = () => {
     return (
@@ -16,23 +17,25 @@ const App = () => {
             <Navbar />
             <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
                 <Routes>
-                    {/* Home Route */}
-                    <Route path="/" element={
-                        <>
-                            <Hero />
-                            <Benefits />
-                            <Services />
-                            <Pricing />
-                            <Roadmap />
-                            <Contact/>
-                            <Footer />
-                        </>
-                    } />
-
-                    {/* Privacy Policy Route */}
+                    <Route
+                        path="/"
+                        element={
+                            <>
+                                <Hero />
+                                <Benefits />
+                                <Services />
+                                <Pricing />
+                                <Roadmap />
+                                <Contact />
+                                <Footer />
+                            </>
+                        }
+                    />
                     <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-
-                    {/* Add more routes here if necessary */}
+                    <Route path="*" element={<h1>Page Not Found</h1>} /> {/* Fallback route */}
+       
+                    <Route path="/blog" element={<Blog />} />
+                    <Route path="/blog/:id" element={<Article />} />
                 </Routes>
             </div>
         </>

@@ -52,7 +52,7 @@ const VisionAndTeam = () => {
                                 Based in the heart of NE US, we are a diverse, passionate team of engineers, AI experts, and industry veterans, dedicated to solving real-world challenges in the rail industry.
                             </p>
                             <div className="mt-8 py-6 px-8 bg-black rounded-t-xl rounded-bl-xl font-code text-base">
-                                Connect with us here -> tejas@sahayai.com
+                                Connect with us here - tejas@sahayai.com
                                 <ChatBubbleWing className="absolute left-full bottom-0" />
                             </div>
                         </div>
@@ -63,7 +63,7 @@ const VisionAndTeam = () => {
                                 We combine AI, robotics, and data analytics to revolutionize how railway inspections are conducted. From real-time monitoring to predictive maintenance, we’re improving rail systems worldwide.
                             </p>
                             <div className="relative mt-8 py-6 px-8 bg-n-8 rounded-xl">
-                                <p className="font-code text-base">LARR-E -> Locomotive Asset Rail Reliability Expert</p>
+                                <p className="font-code text-base">LARR-E - Locomotive Asset Rail Reliability Expert</p>
                             </div>
                         </div>
                     </div>

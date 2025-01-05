@@ -29,7 +29,7 @@ const Footer = () => {
                         © {new Date().getFullYear()}. All rights reserved.
                     </p>
                     {/* Add a link to Privacy Policy */}
-                    <a href="/privacy-policy" className="text-n-4 hover:text-color-1 transition-colors">Privacy Policy</a>
+                    <a href="/#/privacy-policy" className="text-n-4 hover:text-color-1 transition-colors">Privacy Policy</a>
                 </div>
 
                 <ul className="flex gap-5 flex-wrap">
