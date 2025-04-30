@@ -13,7 +13,7 @@ const navigation = [
     { id: "3", title: "Roadmap", url: "#roadmap", isAnchor: true },
     { id: "5", title: "Contact", url: "#contact", isAnchor: true },
     { id: "6", title: "Blog", url: "/blog", isAnchor: false },
-    { id: "4", title: "Sign in", url: "https://app.sahayai.com/", isExternal: true },
+    { id: "4", title: "Careers", url: "#contact", isAnchor: true },
 ];
 
 const Header = () => {
