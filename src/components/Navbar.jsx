@@ -1,5 +1,6 @@
 import { useLocation } from "react-router-dom";
-import { Link } from "react-router-dom"; // Import Link for react-router-dom
+import { Link } from "react-router-dom"; // Import Link for react-router-dom */
+import { HashLink } from "react-router-hash-link"; 
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
 import { background, sahay, main } from "../assets";
 import Button from "./Button";
@@ -75,17 +76,13 @@ const Header = () => {
                                     {item.title}
                                 </a>
                             ) : item.isAnchor ? (
-                                <a
+                                <HashLink
                                     key={item.id}
-                                    href={item.url}
-                                    onClick={(e) => {
-                                        e.preventDefault();
-                                        handleClick(item.isAnchor, item.url);
-                                    }}
+                                    to={`/${item.url}`}
                                     className={`block relative font-code text-2xl uppercase text-white transition-colors hover:text-color-1 px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold lg:leading-5 lg:hover:text-white xl:px-12`}
                                 >
                                     {item.title}
-                                </a>
+                                </HashLink>
                             ) : (
                                 <Link
                                     key={item.id}
