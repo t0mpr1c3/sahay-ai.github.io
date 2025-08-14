@@ -29,7 +29,7 @@ const VisionAndTeam = () => {
                                 </li>
                                 <li className="flex items-start py-4 border-t border-n-6">
                                     <img width={24} height={24} src={check} alt="check" />
-                                    <p className="ml-4">Real-time data remote mointoring</p>
+                                    <p className="ml-4">Real-time data remote monitoring</p>
                                 </li>
                                 <li className="flex items-start py-4 border-t border-n-6">
                                     <img width={24} height={24} src={check} alt="check" />
