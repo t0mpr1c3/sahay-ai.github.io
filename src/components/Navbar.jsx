@@ -1,6 +1,6 @@
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom"; // Import Link for react-router-dom */
-import { HashLink } from "react-router-hash-link"; 
+import { HashLink } from "react-router-hash-link";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
 import { background, sahay, main } from "../assets";
 import Button from "./Button";
