@@ -2,6 +2,7 @@ import Section from "../components/Section";
 import { smallSphere, stars, lines, check } from "../assets";
 import Heading from "../components/Heading";
 import Button from "../components/Button";
+import { HashLink } from "react-router-hash-link";
 
 const pricing = [
     {
@@ -94,9 +95,9 @@ const Pricing = () => {
                 </div>
 
                 <div className="flex justify-center mt-10">
-                    <a className="text-xs font-code font-bold tracking-wider uppercase border-b" href="#pricing">
+                    <HashLink className="text-xs font-code font-bold tracking-wider uppercase border-b" to="/#pricing">
                         See the full details
-                    </a>
+                    </HashLink>
                 </div>
             </div>
         </Section>
