@@ -9,8 +9,15 @@ const Button = ({ className, href, onClick, children, white }) => {
         </button>
     );
 
+    const buttonId = (`${href}`.substring(0,1) == "#") ? `${`${href}`.substring(1)}-button-link` : ""
+    const buttonTo = (`${href}`.substring(0,1) == "#") ? `/${href}` : `${href}`
+
     const renderedLink = (
-        <HashLink to={`/${href}`} className={classes}>
+        <HashLink
+            id={buttonId}
+            to={buttonTo}
+            className={classes}
+        >
             <span className={`relative w-full px-5 py-2.5 ${white ? '' : 'bg-gray-900'} rounded-md`}>{children}</span>
         </HashLink>
     );

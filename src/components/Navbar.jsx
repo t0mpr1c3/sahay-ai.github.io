@@ -78,7 +78,9 @@ const Header = () => {
                             ) : item.isAnchor ? (
                                 <HashLink
                                     key={item.id}
+                                    id={`navbar-${item.title.toLowerCase()}-button`}
                                     to={`/${item.url}`}
+                                    onClick={() => handleClick(true, item.url)}
                                     className={`block relative font-code text-2xl uppercase text-white transition-colors hover:text-color-1 px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold lg:leading-5 lg:hover:text-white xl:px-12`}
                                 >
                                     {item.title}
